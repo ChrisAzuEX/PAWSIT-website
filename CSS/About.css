@@ -1,8 +1,7 @@
 body
 {
-  background-color: #D32A4C;
+  background-color: #DFDFDF;
   font-family: 'Patrick Hand', cursive;
-
 }
 
 a 
@@ -40,7 +39,6 @@ p
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
 }
 
 .left-nav, .right-nav 
@@ -59,8 +57,7 @@ p
   text-align: center;
   padding-top: 5px;
   display: block;
-  max-width: 120px;
-  width: 12vw;
+  width: 120px;
 }
 
 .left-nav a:hover 
@@ -73,7 +70,7 @@ p
   float: right;
 }
 
-#with-splitter
+.splitter
 {
   margin-top: 5px;
   float: left;
@@ -81,7 +78,7 @@ p
   text-align: center;
   display: block;
   width: 1px;
-  border-left: 2px solid #CC9022;
+  border-left: 2px solid rgb(221, 145, 24);
 }
 
 .search-container 
@@ -91,6 +88,7 @@ p
   right: 0;
   top: 0;
   bottom: 0;
+  height: 60px;
   text-align: right;
 }
 
@@ -103,11 +101,11 @@ p
   border-radius: 10px;
   border: none;
   height: 40px;
-  width: 25%;
+  width: 40vw;
   margin: auto;
   padding-left: 15px;
   padding-right: 5px;
-  font-size: 18px;
+  font-size: 22px;
   font-family: 'Patrick Hand', cursive;
   display: inline-block;
 }
@@ -121,9 +119,72 @@ p
   display: inline-block;
 }
 
+/*------------------------------------Responsiveness----------------------------------*/
+
+@media only screen and (max-width: 1300px) {
+  /* When the search bar hits the nav buttons */
+  .top-nav
+  {
+    height: 120px;
+  }
+
+  .left-nav
+  {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 2vw;
+    height: 60px;
+    text-align: center;
+  }
+
+  .left-nav a 
+{
+  margin: auto;
+  width: 16vw;
+}
+
+.splitter
+{
+  visibility: hidden;
+}
+
+  .right-nav
+  {
+    position: absolute;
+    top: 60px;
+  }
+
+  .right-nav, .search-container
+  {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    height: 60px;
+  }
+  #search-bar
+  {
+    width: 90vw;
+    right: 5vw;
+    left: 5vw;
+  }
+  #submit-button
+  {
+    visibility: hidden;
+  }
+  
+
+}
+
 /*------------------------------------The main body section----------------------------------*/
 
-.logo-container 
+.about-content__logo
+{
+  
+}
+
+.about-content__logo 
 {
   position: relative;
   margin: auto;
@@ -172,9 +233,9 @@ p
   left: 10px;
   right: 10px;
   height: 80px;
-  border-top: 1px solid #DFDFDF;
+  border-top: 1px solid rgb(158, 158, 158);
   padding: 0;
-  color: #DFDFDF;
+  color: rgb(158, 158, 158);
 }
 
 .footer-right, .footer-left
@@ -200,12 +261,12 @@ p
 {
   padding-left: 10px;
   padding-right: 10px;
-  color: #DFDFDF;
+  color: rgb(158, 158, 158);
 }
 
 .footer-right__links
 {
-  border-right: 1px solid #DFDFDF;
+  border-right: 1px solid rgb(158, 158, 158);
 }
 
 .footer-right a:hover
@@ -216,6 +277,7 @@ p
 #copyright
 {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 5px;
+  right: 20px;
 }
+

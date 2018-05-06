@@ -1,0 +1,221 @@
+body
+{
+  background-color: #D32A4C;
+  font-family: 'Patrick Hand', cursive;
+
+}
+
+a 
+{
+  text-decoration: none;
+}
+
+p 
+{
+  margin: 0;
+}
+
+/*------------------------------------Navigation Bar section----------------------------------*/
+
+.top-nav
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #FAA41B;
+  overflow: hidden;
+}
+
+.left-nav 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.right-nav 
+{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.left-nav, .right-nav 
+{
+  height: 60px;
+  padding: 0;
+  color: white;
+}
+
+.left-nav a 
+{
+  float: left;
+  color: white;
+  height: 55px;
+  font-size: 33px;
+  text-align: center;
+  padding-top: 5px;
+  display: block;
+  max-width: 120px;
+  width: 12vw;
+}
+
+.left-nav a:hover 
+{
+  background-color: #CC9022;
+}
+
+.right-nav a /* change to form*/
+{
+  float: right;
+}
+
+#with-splitter
+{
+  margin-top: 5px;
+  float: left;
+  height: 50px;
+  text-align: center;
+  display: block;
+  width: 1px;
+  border-left: 2px solid #CC9022;
+}
+
+.search-container 
+{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: right;
+}
+
+#search-bar 
+{
+  position: absolute;
+  top: 10px;
+  right: 55px;
+  background-color: #DFDFDF;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  width: 25%;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 5px;
+  font-size: 18px;
+  font-family: 'Patrick Hand', cursive;
+  display: inline-block;
+}
+
+#submit-button 
+{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  height: 30px;
+  display: inline-block;
+}
+
+/*------------------------------------The main body section----------------------------------*/
+
+.logo-container 
+{
+  position: relative;
+  margin: auto;
+  margin-top: 120px;
+  min-width: 500px;
+  text-align: center;
+  padding: 0;
+}
+
+#logo 
+{
+  max-width: 400px;
+  width: 300px;
+  margin: auto;
+}
+
+/*------------------------------------for the search results----------------------------------*/
+
+.searchResults
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  right: 0;
+  left: 0;
+}
+
+#searchResults
+{
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+/*------------------------------------footer----------------------------------*/
+
+.footer
+{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: 80px;
+  border-top: 1px solid #DFDFDF;
+  padding: 0;
+  color: #DFDFDF;
+}
+
+.footer-right, .footer-left
+{
+  position: absolute;
+  top: 5px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-left
+{
+  left: 10px;
+}
+
+.footer-right
+{
+  right: 10px;
+}
+
+.footer-right a
+{
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #DFDFDF;
+}
+
+.footer-right__links
+{
+  border-right: 1px solid #DFDFDF;
+}
+
+.footer-right a:hover
+{
+  color: white;
+}
+
+#copyright
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

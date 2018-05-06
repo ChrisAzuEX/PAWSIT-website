@@ -1,0 +1,208 @@
+body
+{
+  background-color: #D32A4C;
+  font-family: 'Patrick Hand', cursive;
+
+}
+
+a 
+{
+  text-decoration: none;
+}
+
+p 
+{
+  margin: 0;
+}
+
+/*------------------------------------Navigation Bar section----------------------------------*/
+
+.top-nav
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #FAA41B;
+  overflow: hidden;
+}
+
+.left-nav 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.right-nav 
+{
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.left-nav, .right-nav 
+{
+  height: 60px;
+  padding: 0;
+  color: white;
+}
+
+.right-nav a, .left-nav a
+{
+  color: white;
+  height: 55px;
+  font-size: 33px;
+  text-align: center;
+  padding-top: 5px;
+  display: block;
+  min-width: 120px;
+}
+
+.left-nav a 
+{
+  float: left;
+}
+
+.right-nav a 
+{
+  float: right;
+}
+
+.right-nav a:hover, .left-nav a:hover 
+{
+  background-color: #CC9022;
+}
+
+/*------------------------------------The main body section----------------------------------*/
+
+
+.logo-container 
+{
+  position: relative;
+  margin: auto;
+  margin-top: 120px;
+  min-width: 500px;
+  text-align: center;
+  padding: 0;
+}
+
+.search-container 
+{
+  position: relative;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#logo 
+{
+  max-width: 400px;
+  width: 300px;
+  margin: auto;
+}
+
+#search-bar 
+{
+  background-color: #DFDFDF;
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  width: 50vw;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 5px;
+  font-size: 25px;
+  font-family: 'Patrick Hand', cursive;
+  display: inline-block;
+}
+
+#submit-button 
+{
+  position: absolute;
+  margin-left: 10px;
+  height: 50px;
+  bottom: 0px;
+  display: inline-block;
+}
+
+/*------------------------------------for the search results----------------------------------*/
+
+.searchResults
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  right: 0;
+  left: 0;
+}
+
+#searchResults
+{
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+/*------------------------------------footer----------------------------------*/
+
+.footer
+{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: 80px;
+  border-top: 1px solid #DFDFDF;
+  padding: 0;
+  color: #DFDFDF;
+}
+
+.footer-right, .footer-left
+{
+  position: absolute;
+  top: 5px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-left
+{
+  left: 10px;
+}
+
+.footer-right
+{
+  right: 10px;
+}
+
+.footer-right a
+{
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #DFDFDF;
+}
+
+.footer-right__links
+{
+  border-right: 1px solid #DFDFDF;
+}
+
+.footer-right a:hover
+{
+  color: white;
+}
+
+#copyright
+{
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+}

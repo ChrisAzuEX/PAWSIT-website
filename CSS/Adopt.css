@@ -195,7 +195,7 @@ p
   text-align: center;
   width: 63%;
   height: 600px;
-  background-color: #fff;
+  background-color: white;
 }
 
 #logo
@@ -209,7 +209,7 @@ p
 {
   height: 540px;
   width: 300px;
-  background-color: #D32A4C;
+  background-color: #d32a4c;
   position: absolute;
   bottom: 0;
   left: 300px;
@@ -219,7 +219,7 @@ p
 {
   height: 540px;
   width: 300px;
-  background-color: #D32A4C;
+  background-color: #d32a4c;
   position: absolute;
   bottom: 0;
   left: 600px;
@@ -229,21 +229,22 @@ p
 {
   height: 540px;
   width: 300px;
-  background-color: #D32A4C;
+  background-color: #d32a4c;
   position: absolute;
   bottom: 0;
   left: 900px;
+  border-bottom-right-radius: 20px;
 }
 
 .service-button
 {
-  background: #CC9022;
+  background: #FAA41B;
 	width: 160px;
 	height: 60px;
 	font-size: 25px;
 	padding: 15px;
 	border: none;
-	color: white;
+	color: black;
 	cursor: pointer;
 	transition: 0.3s;
   font-family: 'Patrick Hand', cursive;
@@ -257,36 +258,57 @@ p
 
 .service-button__selected
 {
+  background: #d32a4c;
+	width: 160px;
+	height: 60px;
+	font-size: 25px;
+	padding: 15px;
+	border: none;
+	color: black;
+	cursor: pointer;
+	transition: 0.3s;
+  font-family: 'Patrick Hand', cursive;
+  float: right;
+  border-top-right-radius: 20px;
+}
+
+.service-button__left
+{
   background: #FAA41B;
 	width: 160px;
 	height: 60px;
 	font-size: 25px;
 	padding: 15px;
 	border: none;
-	color: white;
+	color: black;
 	cursor: pointer;
 	transition: 0.3s;
   font-family: 'Patrick Hand', cursive;
   float: right;
+  border-top-left-radius: 20px;
 }
 
+.service-button__left:hover
+{
+  background: #FAA41B;
+}
 .service1 h1
 {
-  color:#fff;
+  color:#000;
   text-align: center;
   margin-top: 50px;
 }
 
 .service2 h1
 {
-  color:#fff;
+  color:#000;
   text-align: center;
   margin-top: 50px;
 }
 
 .service3 h1
 {
-  color:#fff;
+  color:#000;
   text-align: center;
   margin-top: 50px;
 }
@@ -294,7 +316,7 @@ p
 .service1 ul
 {
   font-size: 20px;
-  color:#fff;
+  color:#000;
   text-align: center;
   margin-left: 50px;
   margin-right: 50px;
@@ -303,13 +325,14 @@ p
   margin-bottom: 50px;
   padding-bottom: 10px;
   padding-left: 5px;
-  background: #931e36;
+  background: #FAA41B;
+  border-radius: 10px;
 }
 
 .service2 ul
 {
     font-size: 20px;
-    color:#fff;
+    color:#000;
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
@@ -318,13 +341,14 @@ p
     margin-bottom: 50px;
     padding-bottom: 10px;
     padding-left: 5px;
-    background: #931e36;
+    background: #FAA41B;
+    border-radius: 10px;
 }
 
 .service3 ul
 {
     font-size: 20px;
-    color:#fff;
+    color:#000;
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
@@ -333,7 +357,8 @@ p
     margin-bottom: 50px;
     padding-bottom: 10px;
     padding-left: 5px;
-    background: #931e36;
+    background: #FAA41B;
+    border-radius: 10px;
 }
 
 .service1 ul:hover
@@ -358,6 +383,7 @@ p
     padding-top: 15px;
     padding-right: 50px;
     padding-left: 20px;
+    border-radius: 10px;
 }
 
 .service2 img
@@ -367,6 +393,7 @@ p
     padding-top: 15px;
     padding-right: 50px;
     padding-left: 20px;
+    border-radius: 10px;
 }
 
 .service3 img
@@ -376,30 +403,37 @@ p
     padding-top: 15px;
     padding-right: 50px;
     padding-left: 20px;
+    border-radius: 10px;
 }
 
 .filters
 {
   height: 540px;
   width: 300px;
-  background-color: #931e36;
+  background-color: #FAA41B;
   position: absolute;
   bottom: 0;
+  margin-left: 60px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .filters h1
 {
-  color:#fff;
-  text-align: justify;
-  margin: 1px;
+  color:black;
+  text-align: center;
+  margin-left: -50px;
+  margin-top: 20px;
   padding: 50px;
 }
 
 .filters li
 {
   font-size: 25px;
-  color: #fff;
-  margin-bottom: 15px;
+  color: black;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  margin-left: -50px;
 }
 
 .filters li:hover

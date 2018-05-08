@@ -10,10 +10,15 @@ a
 {
   text-decoration: none;
 }
-
-p 
+/*------------------------------------Section for the Logo----------------------------------*/
+.logo-container
 {
-  margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: #d32a4c;
 }
 
 /*------------------------------------Navigation Bar section----------------------------------*/
@@ -21,7 +26,7 @@ p
 .top-nav
 {
   position: fixed;
-  top: 0;
+  top: 70px;
   left: 0;
   right: 0;
   height: 45px;
@@ -31,14 +36,14 @@ p
 
 .left-nav 
 {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 }
 
 .right-nav 
 {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
 }
@@ -57,7 +62,6 @@ p
   height: 45px;
   font-size: 25px;
   text-align: center;
-  display: block;
   width: 90px;
 }
 
@@ -132,23 +136,24 @@ p
   .left-nav
   {
     position: absolute;
-    right: 0;
     top: 0;
-    left: 2vw;
+    right: 0;
+    left: 0;
     height: 45px;
-    text-align: center;
+    display: flex;
   }
 
-  .left-nav a 
-{
-  margin: auto;
-  width: 16vw;
-}
+    .left-nav a 
+  {
+    margin: auto;
+    width: 15vw;
+    justify-content: space-around;
+  }
 
-.splitter
-{
-  visibility: hidden;
-}
+  .splitter
+  {
+    visibility: hidden;
+  }
 
   .right-nav
   {
@@ -175,112 +180,3 @@ p
     visibility: hidden;
   }
 }
-
-/*------------------------------------The main body section----------------------------------*/
-
-.about-content
-{
-  position: absolute;
-  top: 45px;
-  right: 0;
-  left: 0;
-  margin: 0;
-  min-height: 900px;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.about-content__logo 
-{
-  position: relative;
-  right: 0;
-  left: 0;
-  top: 0;
-  text-align: left;
-  background-color: #D32A4C;
-}
-
-#logo-paw
-{
-  margin-left: 10vw;
-  margin-top: 40px;
-  height: 25vh;
-}
-
-#logo-name
-{
-  height: 9vh;
-  margin-bottom: 10px;
-}
-
-/*------------------------------------Main Body Responsiveness----------------------------------*/
-
-@media only screen and (max-width: 1300px)
-{
-  .about-content
-  {
-    top: 90px;
-  }
-  
-}
-
-/*------------------------------------footer----------------------------------*/
-
-
-.footer
-{
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-  right: 10px;
-  height: 80px;
-  border-top: 1px solid rgb(158, 158, 158);
-  padding: 0;
-  color: rgb(158, 158, 158);
-  display: block;
-}
-
-
-.footer-right, .footer-left
-{
-  position: absolute;
-  top: 5px;
-  height: 50px;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-left
-{
-  left: 10px;
-}
-
-.footer-right
-{
-  right: 10px;
-}
-
-.footer-right a
-{
-  padding-left: 10px;
-  padding-right: 10px;
-  color: rgb(158, 158, 158);
-}
-
-.footer-right__links
-{
-  border-right: 1px solid rgb(158, 158, 158);
-}
-
-.footer-right a:hover
-{
-  color: white;
-}
-
-#copyright
-{
-  position: absolute;
-  bottom: 5px;
-  right: 20px;
-}
-

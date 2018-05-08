@@ -10,10 +10,15 @@ a
 {
   text-decoration: none;
 }
-
-p 
+/*------------------------------------Section for the Logo----------------------------------*/
+.logo-container
 {
-  margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: #d32a4c;
 }
 
 /*------------------------------------Navigation Bar section----------------------------------*/
@@ -21,7 +26,7 @@ p
 .top-nav
 {
   position: fixed;
-  top: 0;
+  top: 70px;
   left: 0;
   right: 0;
   height: 45px;
@@ -31,14 +36,14 @@ p
 
 .left-nav 
 {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 }
 
 .right-nav 
 {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
 }
@@ -175,174 +180,3 @@ p
     visibility: hidden;
   }
 }
-
-/*------------------------------------The main body section----------------------------------*/
-
-.about-content
-{
-  position: absolute;
-  top: 45px;
-  right: 0;
-  left: 0;
-  margin: 0;
-  min-height: 900px;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.about-content__logo 
-{
-  position: relative;
-  right: 0;
-  left: 0;
-  top: 0;
-  text-align: left;
-  background-color: #D32A4C;
-}
-
-#logo-paw
-{
-  margin-left: 10vw;
-  margin-top: 40px;
-  height: 25vh;
-}
-
-#logo-name
-{
-  height: 9vh;
-  margin-bottom: 10px;
-}
-
-.about-content__text
-{
-  position: relative;
-  margin-right: 12vw;
-  margin-left: 12vw;
-  display: block;
-}
-
-.about-content__text h1
-{
-  font-size: 33px;
-}
-
-.about-content__text p
-{
-  font-size: 20px;
-  right: 100px;
-}
-
-.about-content__members
-{
-  position: relative;
-  top: 5vh;
-  margin-right: 1vw;
-  margin-left: 1vw;
-  display: block;
-  text-align: center;
-}
-
-.about-content__members-block
-{
-  position: relative;
-  display: inline-block;
-  margin: auto;
-  width: 12vw;
-  min-width: 150px;
-  padding-bottom: 20px;
-}
-
-.member-pic
-{
-  height: 100px;
-}
-
-.name 
-{
-  font-size: 25px;
-}
-
-.role 
-{
-  color: #e6a226;
-  font-size: 20px;
-}
-
-/*------------------------------------Main Body Responsiveness----------------------------------*/
-
-@media only screen and (max-width: 1300px)
-{
-  .about-content
-  {
-    top: 90px;
-  }
-  .about-content__logo
-  {
-    text-align: center;
-  }
-  #logo-paw
-  {
-    margin-left: 0;
-  }
-}
-
-/*------------------------------------footer----------------------------------*/
-
-
-.footer
-{
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-  right: 10px;
-  height: 80px;
-  border-top: 1px solid rgb(158, 158, 158);
-  padding: 0;
-  color: rgb(158, 158, 158);
-  display: block;
-}
-
-
-.footer-right, .footer-left
-{
-  position: absolute;
-  top: 5px;
-  height: 50px;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-left
-{
-  left: 10px;
-}
-
-.footer-right
-{
-  right: 10px;
-}
-
-.footer-right a
-{
-  padding-left: 10px;
-  padding-right: 10px;
-  color: rgb(158, 158, 158);
-}
-
-.footer-right__links
-{
-  border-right: 1px solid rgb(158, 158, 158);
-}
-
-.footer-right a:hover
-{
-  color: white;
-}
-
-#copyright
-{
-  position: absolute;
-  bottom: 5px;
-  right: 20px;
-}
-

@@ -23,7 +23,7 @@ p
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  height: 45px;
   background-color: #FAA41B;
   overflow: hidden;
 }
@@ -44,7 +44,7 @@ p
 
 .left-nav, .right-nav 
 {
-  height: 60px;
+  height: 45px;
   padding: 0;
   color: white;
 }
@@ -52,12 +52,11 @@ p
 .right-nav a, .left-nav a
 {
   color: white;
-  height: 55px;
-  font-size: 33px;
+  height: 45px;
+  font-size: 25px;
   text-align: center;
-  padding-top: 5px;
   display: block;
-  min-width: 120px;
+  min-width: 90px;
 }
 
 .left-nav a 
@@ -94,6 +93,7 @@ p
   left: 0;
   right: 0;
   text-align: center;
+  margin-top: 30px;
 }
 
 #logo 

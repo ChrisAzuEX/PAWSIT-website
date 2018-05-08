@@ -249,6 +249,7 @@ p
 	transition: 0.3s;
   font-family: 'Patrick Hand', cursive;
   float: right;
+  border-top-right-radius: 20px;
 }
 
 .service-button:hover
@@ -269,7 +270,6 @@ p
 	transition: 0.3s;
   font-family: 'Patrick Hand', cursive;
   float: right;
-  border-top-right-radius: 20px;
 }
 
 .service-button__left

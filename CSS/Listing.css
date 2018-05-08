@@ -148,6 +148,7 @@ p
   .top-nav
   {
     height: 90px;
+    z-index: +2;
   }
 
   .left-nav
@@ -208,22 +209,25 @@ p
   right: 0;
   min-height: 74vh;
   padding-bottom: 80px;
-  z-index: -1;
 }
 
 /*------------------------------------Slide show----------------------------------*/
 
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
+  width: 75vw;
+  height: 500px;
   margin: auto;
 }
+
+.mySlides
+{
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+
 
 /* Next & previous buttons */
 .prev, .next {

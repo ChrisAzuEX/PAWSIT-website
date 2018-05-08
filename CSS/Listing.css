@@ -285,6 +285,7 @@ p
   border-radius: 10px;
   display: block;
   padding: 10px;
+  overflow: scroll;
 }
 
 .item-container__description h1
@@ -300,16 +301,46 @@ p
   font-size: 25px;
 }
 
+.contact-button
+{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  border-radius: 25px;
+  background-color: rgb(0, 206, 27);
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-button a
+{
+  padding: 5px 40px;
+  color: white;
+  display: block;
+  height: 45px;
+  font-size: 25px;
+}
+
+.contact-button:hover
+{
+  background-color: rgb(0, 165, 22);
+}
+
 /*------------------------------related listings----------------------------*/
 
-.related-items__title
+.related-items__text
 {
   position: relative;
-  top: 0;
+  top: 50px;
+  left: 0;
+  right: 0;
   display: block;
   margin: auto;
   font-size: 30px;
-  color: #d32a4c;
+  color: #A2A2A2;
+  text-align: center;
 }
 
 .related-items
@@ -321,12 +352,21 @@ p
   margin-top: 50px;
   display: flex;
   background-color: #A2A2A2;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
 }
 
 .related-items__block
 {
   position: relative;
+  height: 200px;
+  width: 200px;
   display: flex;
+  background-color: #FAA41B;
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .related-items__block img 

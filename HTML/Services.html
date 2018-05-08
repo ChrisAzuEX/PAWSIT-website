@@ -8,59 +8,73 @@
 </head>
 <body>
 
-	<!--                       Navigation bar                   -->
-  <div class="top-nav">
-  	<div class="left-nav">
-			<a href="../index.html">Home</a>
-			<p class="splitter"></p>
-  	  <a href="../HTML/Register.html">Register</a>
-  	  <a href="../HTML/Login.html">Login</a>
-			<p class="splitter"></p>
-			<a href="HTML/adopt.html">Adopt</a>
-			<a href="HTML/buy.html">Buy</a>
-			<a href="../HTML/About.html">About</a>
-    </div>
-    <div class="right-nav">
-			<form class="search-container">
-				<input type="search" id="search-bar" onkeyup="filter()" name="item" placeholder="Woof (Search)?">
-			  <input type="image" src="../Res/paw.PNG" alt="Submit" id="submit-button"/>
-			</form>
-    </div>
-  </div>
-    
-  
-  <!--                          The logo side                     -->
+  <!--                         company name                 -->
   <div class="logo-container">
-    <img id="logo" src="../Res/logo.png">	
+      <img id="logo" src="../Res/logo-name.png">
   </div>
 
+
+	<!--                       Navigation bar                   -->
+  <!--                         The navigation bar                 -->
+  <div class="top-nav">
+
+      <div class="left-nav">
+
+        <a href="../index.html">Home</a>
+        <p class="splitter"></p>
+        <a href="../HTML/register.html">Register</a>
+        <a href="../HTML/login.html">Login</a>
+        <p class="splitter"></p>
+        <a href="../HTML/adopt.html">Adopt</a>
+        <a href="../HTML/buy.html">Buy</a>
+        <a href="../HTML/services.html">Services</a>
+
+      </div>
+      <div class="right-nav">
+
+        <form class="search-container">
+          <input type="search" id="search-bar" onkeyup="filter()" name="item" placeholder="Woof (Search)?">
+          <input type="image" src="../Res/paw.PNG" alt="Submit" id="submit-button"/>
+        </form>
+
+      </div>
+    </div>
   
 	<!--                          Content                      -->
   <div class="services-content">
-      <div class="services-content__heading">Services</div>
-      <div class="service">
-          <h1>Active Listings</h1>
-          <img src="../Res/list.png" class="service__image">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia alias error voluptas, fugit quis delectus, blanditiis eligendi quam debitis reiciendis animi enim accusamus illo facilis pariatur voluptate perferendis quos nesciunt.</p>
+    <form class="service-nav">
+        <input type="submit" name="Adopt" value="Adopt" class="service-button">
+        <input type="submit" name="Buy" value="Buy" class="service-button">
+        <input type="submit" name="Services" value="Services" class="service-button__selected">
+    </form>
+    <div class="filters">
+      <div class="filter-description">
+        <h1>Filters</h1>
+        <li>Option 1</li>
+        <li>Option 2</li>
+        <li>Option 3</li>
       </div>
+    </div>
+    <div class="service1">
+      <h1>Veterinary</h1>
+      <ul>Business 1</ul>
+      <ul>Makati City</ul>
+      <ul>#########</ul>
+    </div>
 
-      <div class="service">
-            <h1>Active Listings</h1>
-            <img src="../Res/list.png" class="service__image">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia alias error voluptas, fugit quis delectus, blanditiis eligendi quam debitis reiciendis animi enim accusamus illo facilis pariatur voluptate perferendis quos nesciunt.</p>
-      </div>
-
-      <div class="service">
-            <h1>Active Listings</h1>
-            <img src="../Res/list.png" class="service__image">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia alias error voluptas, fugit quis delectus, blanditiis eligendi quam debitis reiciendis animi enim accusamus illo facilis pariatur voluptate perferendis quos nesciunt.</p>
-      </div>
-
-      <div class="service">
-                <h1>Active Listings</h1>
-                <img src="../Res/list.png" class="service__image">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia alias error voluptas, fugit quis delectus, blanditiis eligendi quam debitis reiciendis animi enim accusamus illo facilis pariatur voluptate perferendis quos nesciunt.</p>
-      </div>
+    <div class="service2">
+      <h1>Grooming</h1>
+      <ul>Business 2</ul>
+      <ul>Makati City</ul>
+      <ul>#########</ul>
+    </div>
+      
+    <div class="service3">
+      <h1>Boarding</h1>
+      <ul>Business 3</ul>
+      <ul>Makati City</ul>
+      <ul>#########</ul>
+    </div>
   </div>
 	
   

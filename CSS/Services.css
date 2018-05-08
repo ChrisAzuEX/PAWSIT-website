@@ -1,6 +1,6 @@
 body
 {
-  background-color: #D32A4C;
+  background-color: white;
   font-family: 'Patrick Hand', cursive;
 }
 
@@ -19,31 +19,31 @@ p
 .top-nav
 {
   position: fixed;
-  top: 0;
+  top: 55px;                           /*container height*/
   left: 0;
   right: 0;
-  height: 60px;
+  height: 45px;
   background-color: #FAA41B;
   overflow: hidden;
 }
 
 .left-nav 
 {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 }
 
 .right-nav 
 {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
 }
 
 .left-nav, .right-nav 
 {
-  height: 60px;
+  height: 45px;
   padding: 0;
   color: white;
 }
@@ -52,12 +52,10 @@ p
 {
   float: left;
   color: white;
-  height: 55px;
-  font-size: 33px;
+  height: 45px;
+  font-size: 25px;
   text-align: center;
-  padding-top: 5px;
-  display: block;
-  width: 120px;
+  width: 90px;
 }
 
 .left-nav a:hover 
@@ -74,7 +72,7 @@ p
 {
   margin-top: 5px;
   float: left;
-  height: 50px;
+  height: 35px;
   text-align: center;
   display: block;
   width: 1px;
@@ -88,24 +86,24 @@ p
   right: 0;
   top: 0;
   bottom: 0;
-  height: 60px;
+  height: 45px;
   text-align: right;
 }
 
 #search-bar 
 {
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 55px;
   background-color: #DFDFDF;
   border-radius: 10px;
   border: none;
-  height: 40px;
+  height: 35px;
   width: 40vw;
   margin: auto;
   padding-left: 15px;
   padding-right: 5px;
-  font-size: 22px;
+  font-size: 17px;
   font-family: 'Patrick Hand', cursive;
   display: inline-block;
 }
@@ -113,7 +111,7 @@ p
 #submit-button 
 {
   position: absolute;
-  top: 15px;
+  top: 7px;
   right: 10px;
   height: 30px;
   display: inline-block;
@@ -125,34 +123,35 @@ p
   /* When the search bar hits the nav buttons */
   .top-nav
   {
-    height: 120px;
+    height: 90px;
   }
 
   .left-nav
   {
     position: absolute;
-    right: 0;
     top: 0;
-    left: 2vw;
-    height: 60px;
-    text-align: center;
+    right: 0;
+    left: 0;
+    height: 45px;
+    display: flex;
   }
 
-  .left-nav a 
-{
-  margin: auto;
-  width: 16vw;
-}
+    .left-nav a 
+  {
+    margin: auto;
+    width: 15vw;
+    justify-content: space-around;
+  }
 
-.splitter
-{
-  visibility: hidden;
-}
+  .splitter
+  {
+    visibility: hidden;
+  }
 
   .right-nav
   {
     position: absolute;
-    top: 60px;
+    top: 45px;
   }
 
   .right-nav, .search-container
@@ -173,86 +172,186 @@ p
   {
     visibility: hidden;
   }
-  
-
 }
 
 /*------------------------------------The main body section----------------------------------*/
 
-.logo-container 
+.logo-container
 {
-  position: relative;
-  margin: auto;
-  margin-top: 120px;
-  min-width: 500px;
-  text-align: center;
-  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55px;                     /* container height */
+  background-color: #d32a4c;
 }
 
 .services-content 
 {
   position: relative;
   margin: auto;
+  margin-top: 120px;
   margin-bottom: 50px;
   text-align: center;
-  width: 1000px;
-  height: 500px;
-  background-color: #D32A4C;
+  width: 63%;
+  height: 600px;
+  background-color: #fff;
 }
 
-.services-content__logo 
+#logo
 {
   position: relative;
-  margin: auto;
-  margin-top: 120px;
-  min-width: 500px;
-  text-align: center;
-  padding: 0;
+  height: 50px;
 }
 
-.services-content__heading
+/*-----------------------------------------content---------------------------------------*/
+.service1
 {
-  text-align: center;
+  height: 540px;
+  width: 300px;
+  background-color: #D32A4C;
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+}
+
+.service2
+{
+  height: 540px;
+  width: 300px;
+  background-color: #D32A4C;
+  position: absolute;
+  bottom: 0;
+  left: 600px;
+}
+
+.service3
+{
+  height: 540px;
+  width: 300px;
+  background-color: #D32A4C;
+  position: absolute;
+  bottom: 0;
+  left: 900px;
+}
+
+.service-button
+{
+  background: #CC9022;
+	width: 160px;
+	height: 60px;
+	font-size: 25px;
+	padding: 15px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	transition: 0.3s;
   font-family: 'Patrick Hand', cursive;
-  font-size: 45px;
-  font-weight: bold;
+  float: right;
 }
 
-#logo 
+.service-button:hover
 {
-  max-width: 200px;
-  width: 150px;
-  margin: auto;
+  background: #FAA41B;
 }
 
-/*-----------------------------------------for services---------------------------------------*/
-.service
+.service-button__selected
 {
-  max-width: 250px;
-  width: 230px;
-  padding: 0 5px;
-  float: left;
+  background: #FAA41B;
+	width: 160px;
+	height: 60px;
+	font-size: 25px;
+	padding: 15px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	transition: 0.3s;
+  font-family: 'Patrick Hand', cursive;
+  float: right;
+}
+
+.service1 h1
+{
+  color:#fff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.service2 h1
+{
+  color:#fff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.service3 h1
+{
+  color:#fff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.service1 ul
+{
+  font-size: 20px;
+  color:#fff;
+  text-align: center;
+  margin-right: 50px;
+  padding-left: 50px;
+  margin-top: 80px;
+  margin-bottom: -75px;
+}
+
+.service2 ul
+{
+  font-size: 20px;
+  color:#fff;
+  text-align: center;
+  margin-right: 50px;
+  padding-left: 50px;
+  margin-top: 80px;
+  margin-bottom: -75px;
+}
+
+.service3 ul
+{
+  font-size: 20px;
+  color:#fff;
+  text-align: center;
+  margin-right: 50px;
+  padding-left: 50px;
+  margin-top: 80px;
+  margin-bottom: -75px;
+}
+
+.filters
+{
+  height: 540px;
+  width: 300px;
   background-color: #931e36;
-  border-radius: 20px;
-  border: #D32A4C;
+  position: absolute;
+  bottom: 0;
+}
+
+.filters h1
+{
+  color:#fff;
+  text-align: justify;
   margin: 1px;
+  padding: 50px;
 }
 
-.service p
+.filters li
 {
-    font-size: 18px;
-    color:#fff;
-    text-align: justify;
-    margin: 1px;
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 15px;
 }
 
-.service__image
+.filters li:hover
 {
-    width: 150px;
-    height: 150px;
-    background-color: #931e36;
+  cursor: pointer;
 }
-
 /*------------------------------------for the search results----------------------------------*/
 
 .searchResults
@@ -282,8 +381,8 @@ p
 {
   position: relative;
   bottom: 0;
-  left: 10px;
-  right: 10px;
+  left: 0;
+  right: 0;
   height: 80px;
   border-top: 1px solid rgb(158, 158, 158);
   padding: 0;

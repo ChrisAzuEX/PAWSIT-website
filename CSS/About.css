@@ -212,10 +212,10 @@ p
 
 .about-content__text
 {
-  position: absolute;
-  top: 30vh;
-  left: 12vw;
-  right: 12vw;
+  position: relative;
+  margin-right: 12vw;
+  margin-left: 12vw;
+  display: block;
 }
 
 .about-content__text h1
@@ -226,7 +226,21 @@ p
 .about-content__text p
 {
   font-size: 20px;
-  font
+  right: 100px;
+}
+
+.about-content__members
+{
+  position: relative;
+  top: 5vh;
+  margin-right: 12vw;
+  margin-left: 12vw;
+  display: block;
+}
+
+.about-content__members-block
+{
+  position: relative;
 }
 
 /*------------------------------------Main Body Responsiveness----------------------------------*/

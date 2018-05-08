@@ -3,7 +3,27 @@ body {
   	font-family: 'Patrick Hand', cursive;
 }
 
+/* logo */
+.logo-container 
+{
+  position: relative;
+  margin: auto;
+  margin-top: 120px;
+  min-width: 500px;
+  text-align: center;
+  padding: 0;
+}
+
+#logo 
+{
+  max-width: 200px;
+  width: 150px;
+  margin: auto;
+}
+
+/* infobox */
 .infobox{
+	margin-top: 50px;
 	width: 320px;
 	height: 420px;
 	background: #931e36;
@@ -17,20 +37,7 @@ body {
 	font-family: 'Patrick Hand', cursive;
 }
 
-.infoboxReg{
-	width: 320px;
-	height: 620px;
-	background: #931e36;
-	color: #000;
-	top: 50%;
-	left: 50%;
-	position: absolute;
-	transform: translate(-50%,-50%);
-	box-sizing: border-box;
-	opacity: 60%;
-	font-family: 'Patrick Hand', cursive;
-}
-
+/* navbar */
 .login{
 	background: #e6a226;
 	width: 160px;
@@ -43,10 +50,6 @@ body {
 	cursor: pointer;
 	transition: 0.3s;
 	font-family: 'Patrick Hand', cursive;
-}
-
-.login:hover {
-	background-color: #e6b628;
 }
 
 .loginSelect {
@@ -77,44 +80,14 @@ body {
 	font-family: 'Patrick Hand', cursive;
 }
 
-.registerSelect{
-	background: #e6b628;
-	width: 160px;
-	height: 60px;
-	font-size: 25px;
-	padding: 15px;
-	border: none;
-	color: white;
-	display: inline-block;
-	float: right;
-	transition: 0.3s;
-	font-family: 'Patrick Hand', cursive;
-}
-
-
 .register:hover {
 	background-color: #e6b628;
 }
 
+/* content */
 .info{
 	width: 320px;
 	height: 260px;
-	background: #931e36;
-	color: #fff;
-	top: 50%;
-	left: 50%;
-	position: absolute;
-	transform: translate(-50%,-50%);
-	box-sizing: border-box;
-	padding-left: 70px;
-	font-family: arial;
-	opacity: 60%;
-	font-family: 'Patrick Hand', cursive;
-}
-
-.infoReg{
-	width: 320px;
-	height: 460px;
 	background: #931e36;
 	color: #fff;
 	top: 50%;
@@ -137,25 +110,7 @@ body {
 	font-family: 'Patrick Hand', cursive;
 }
 
-.infoReg input{
-	width: 80%;
-	margin-bottom: 20px;
-	background: transparent;
-	outline: none;
-	height: 40px;
-	font-family: 'Patrick Hand', cursive;
-}
-
 .info input[type="text"], input[type="password"]{
-	border: none;
-	border-bottom: 1px solid #fff;
-	background: transparent;
-	outline: none;
-	color: #fff;
-	font-size: 16px;
-}
-
-.infoReg input[type="text"], input[type="password"]{
 	border: none;
 	border-bottom: 1px solid #fff;
 	background: transparent;
@@ -175,21 +130,62 @@ body {
 	transition: 0.3s;
 }
 
-.infoReg input[type="submit"]{
-	border: none;
-	outline: none;
-	background: #e6a226;
-	color: #fff;
-	font-size: 18px;
-	border-radius: 20px;
-	cursor: pointer;
-	transition: 0.3s;
-}
-
 .info input[type="submit"]:hover{
 	background-color: #e6b628;
 }
 
-.infoReg input[type="submit"]:hover{
-	background-color: #e6b628;
+/*Footer*/
+.footer
+{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: 80px;
+  border-top: 1px solid #DFDFDF;
+  padding: 0;
+  color: #DFDFDF;
+}
+
+.footer-right, .footer-left
+{
+  position: absolute;
+  top: 5px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-left
+{
+  left: 10px;
+}
+
+.footer-right
+{
+  right: 10px;
+}
+
+.footer-right a
+{
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #DFDFDF;
+}
+
+.footer-right__links
+{
+  border-right: 1px solid #DFDFDF;
+}
+
+.footer-right a:hover
+{
+  color: white;
+}
+
+#copyright
+{
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
 }

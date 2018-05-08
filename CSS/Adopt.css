@@ -57,6 +57,7 @@ p
   height: 45px;
   font-size: 25px;
   text-align: center;
+  display: block;
   width: 90px;
 }
 
@@ -131,24 +132,23 @@ p
   .left-nav
   {
     position: absolute;
-    top: 0;
     right: 0;
-    left: 0;
+    top: 0;
+    left: 2vw;
     height: 45px;
-    display: flex;
+    text-align: center;
   }
 
-    .left-nav a 
-  {
-    margin: auto;
-    width: 15vw;
-    justify-content: space-around;
-  }
+  .left-nav a 
+{
+  margin: auto;
+  width: 16vw;
+}
 
-  .splitter
-  {
-    visibility: hidden;
-  }
+.splitter
+{
+  visibility: hidden;
+}
 
   .right-nav
   {
@@ -213,61 +213,6 @@ p
   margin-bottom: 10px;
 }
 
-.about-content__text
-{
-  position: relative;
-  margin-right: 12vw;
-  margin-left: 12vw;
-  display: block;
-}
-
-.about-content__text h1
-{
-  font-size: 33px;
-}
-
-.about-content__text p
-{
-  font-size: 20px;
-  right: 100px;
-}
-
-.about-content__members
-{
-  position: relative;
-  top: 5vh;
-  margin-right: 1vw;
-  margin-left: 1vw;
-  display: block;
-  text-align: center;
-}
-
-.about-content__members-block
-{
-  position: relative;
-  display: inline-block;
-  margin: auto;
-  width: 12vw;
-  min-width: 150px;
-  padding-bottom: 20px;
-}
-
-.member-pic
-{
-  height: 100px;
-}
-
-.name 
-{
-  font-size: 25px;
-}
-
-.role 
-{
-  color: #e6a226;
-  font-size: 20px;
-}
-
 /*------------------------------------Main Body Responsiveness----------------------------------*/
 
 @media only screen and (max-width: 1300px)
@@ -276,14 +221,7 @@ p
   {
     top: 90px;
   }
-  .about-content__logo
-  {
-    text-align: center;
-  }
-  #logo-paw
-  {
-    margin-left: 0;
-  }
+  
 }
 
 /*------------------------------------footer----------------------------------*/

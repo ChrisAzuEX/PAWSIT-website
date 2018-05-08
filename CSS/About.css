@@ -2,6 +2,8 @@ body
 {
   background-color: #DFDFDF;
   font-family: 'Patrick Hand', cursive;
+  height: 100%;
+  min-height: 100%;
 }
 
 a 
@@ -183,9 +185,10 @@ p
   right: 0;
   left: 0;
   margin: 0;
+  min-height: 900px;
+  overflow: hidden;
+  z-index: -1;
 }
-
-
 
 .about-content__logo 
 {
@@ -233,14 +236,36 @@ p
 {
   position: relative;
   top: 5vh;
-  margin-right: 12vw;
-  margin-left: 12vw;
+  margin-right: 1vw;
+  margin-left: 1vw;
   display: block;
+  text-align: center;
 }
 
 .about-content__members-block
 {
   position: relative;
+  display: inline-block;
+  margin: auto;
+  width: 12vw;
+  min-width: 150px;
+  padding-bottom: 20px;
+}
+
+.member-pic
+{
+  height: 100px;
+}
+
+.name 
+{
+  font-size: 25px;
+}
+
+.role 
+{
+  color: #e6a226;
+  font-size: 20px;
 }
 
 /*------------------------------------Main Body Responsiveness----------------------------------*/
@@ -263,6 +288,7 @@ p
 
 /*------------------------------------footer----------------------------------*/
 
+
 .footer
 {
   position: absolute;
@@ -273,7 +299,9 @@ p
   border-top: 1px solid rgb(158, 158, 158);
   padding: 0;
   color: rgb(158, 158, 158);
+  display: block;
 }
+
 
 .footer-right, .footer-left
 {

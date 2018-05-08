@@ -203,7 +203,7 @@ p
 .content-container
 {
   position: absolute;
-  top: 100px;
+  top: 110px;
   left: 0;
   right: 0;
   min-height: 74vh;
@@ -214,7 +214,7 @@ p
 .item-container
 {
   position: relative;
-  top: 40px;
+  top: 30px;
   width: 70vw;
   height: 700px;
   margin: auto;
@@ -285,7 +285,6 @@ p
   border-radius: 10px;
   display: block;
   padding: 10px;
-  overflow: scroll;
 }
 
 .item-container__description h1
@@ -376,6 +375,57 @@ p
 
 /*----------------------------responsiveness content--------------------------*/
 
+@media only screen and (max-width: 1300px) 
+{
+  .item-container
+  {
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+
+  }
+
+  .contact-button
+  {
+    position: relative;
+    margin: auto;
+    top: unset;
+    right: unset;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .item-container__image
+  {
+    position: relative;
+    top: unset;
+    bottom: unset;
+    margin: auto;
+    margin-bottom: 40px;
+    right: 20px;
+    left: 20px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    overflow: hidden;
+
+  }
+
+  .item-container__description
+  {
+    position: relative;
+    height: 100%;
+    width: 50vw;
+    margin: 20px auto;
+    background-color: rgb(255, 209, 134);
+    border-radius: 10px;
+    display: block;
+    padding: 10px;
+  }
+}
 
 /*------------------------------------footer----------------------------------*/
 

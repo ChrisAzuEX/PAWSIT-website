@@ -1,0 +1,522 @@
+body
+{
+  background-color: white;
+  font-family: 'Patrick Hand', cursive;
+}
+
+a 
+{
+  text-decoration: none;
+}
+
+p 
+{
+  margin: 0;
+}
+
+/*------------------------------------Navigation Bar section----------------------------------*/
+
+.top-nav
+{
+  position: fixed;
+  top: 55px;                           /*container height*/
+  left: 0;
+  right: 0;
+  height: 45px;
+  background-color: #FAA41B;
+  overflow: hidden;
+}
+
+.left-nav 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.right-nav 
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.left-nav, .right-nav 
+{
+  height: 45px;
+  padding: 0;
+  color: white;
+}
+
+.left-nav a 
+{
+  float: left;
+  color: white;
+  height: 45px;
+  font-size: 25px;
+  text-align: center;
+  width: 90px;
+}
+
+.left-nav a:hover 
+{
+  background-color: #CC9022;
+}
+
+.right-nav a /* change to form*/
+{
+  float: right;
+}
+
+.splitter
+{
+  margin-top: 5px;
+  float: left;
+  height: 35px;
+  text-align: center;
+  display: block;
+  width: 1px;
+  border-left: 2px solid rgb(221, 145, 24);
+}
+
+.search-container 
+{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 45px;
+  text-align: right;
+}
+
+#search-bar 
+{
+  position: absolute;
+  top: 5px;
+  right: 55px;
+  background-color: #DFDFDF;
+  border-radius: 10px;
+  border: none;
+  height: 35px;
+  width: 40vw;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 5px;
+  font-size: 17px;
+  font-family: 'Patrick Hand', cursive;
+  display: inline-block;
+}
+
+#submit-button 
+{
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  height: 30px;
+  display: inline-block;
+}
+
+/*------------------------------------Responsiveness----------------------------------*/
+
+@media only screen and (max-width: 1300px) {
+  /* When the search bar hits the nav buttons */
+  .top-nav
+  {
+    height: 90px;
+  }
+
+  .left-nav
+  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 45px;
+    display: flex;
+  }
+
+    .left-nav a 
+  {
+    margin: auto;
+    width: 15vw;
+    justify-content: space-around;
+  }
+
+  .splitter
+  {
+    visibility: hidden;
+  }
+
+  .right-nav
+  {
+    position: absolute;
+    top: 45px;
+  }
+
+  .right-nav, .search-container
+  {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    height: 60px;
+  }
+  #search-bar
+  {
+    width: 90vw;
+    right: 5vw;
+    left: 5vw;
+  }
+  #submit-button
+  {
+    visibility: hidden;
+  }
+}
+
+/*------------------------------------The main body section----------------------------------*/
+
+.logo-container
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55px;                     /* container height */
+  background-color: #d32a4c;
+}
+
+.services-content 
+{
+  position: relative;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 63%;
+  height: 600px;
+  background-color: white;
+}
+
+#logo
+{
+  position: relative;
+  height: 50px;
+}
+
+/*-----------------------------------------content---------------------------------------*/
+.service1
+{
+  height: 540px;
+  width: 300px;
+  background-color: #d32a4c;
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+}
+
+.service2
+{
+  height: 540px;
+  width: 300px;
+  background-color: #d32a4c;
+  position: absolute;
+  bottom: 0;
+  left: 600px;
+}
+
+.service3
+{
+  height: 540px;
+  width: 300px;
+  background-color: #d32a4c;
+  position: absolute;
+  bottom: 0;
+  left: 900px;
+  border-bottom-right-radius: 20px;
+}
+
+.service-button
+{
+  background: #FAA41B;
+	width: 160px;
+	height: 60px;
+	font-size: 25px;
+	padding: 15px;
+	border: none;
+	color: black;
+	cursor: pointer;
+	transition: 0.3s;
+  font-family: 'Patrick Hand', cursive;
+  float: right;
+}
+
+.service-button:hover
+{
+  background: #FAA41B;
+}
+
+.service-button__selected
+{
+  background: #d32a4c;
+	width: 160px;
+	height: 60px;
+	font-size: 25px;
+	padding: 15px;
+	border: none;
+	color: black;
+	cursor: pointer;
+	transition: 0.3s;
+  font-family: 'Patrick Hand', cursive;
+  float: right;
+  border-top-right-radius: 20px;
+}
+
+.service-button__left
+{
+  background: #FAA41B;
+	width: 160px;
+	height: 60px;
+	font-size: 25px;
+	padding: 15px;
+	border: none;
+	color: black;
+	cursor: pointer;
+	transition: 0.3s;
+  font-family: 'Patrick Hand', cursive;
+  float: right;
+  border-top-left-radius: 20px;
+}
+
+.service-button__left:hover
+{
+  background: #FAA41B;
+}
+.service1 h1
+{
+  color:#000;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.service2 h1
+{
+  color:#000;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.service3 h1
+{
+  color:#000;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.service1 ul
+{
+  font-size: 20px;
+  color:#000;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-right: -10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  background: #FAA41B;
+  border-radius: 10px;
+}
+
+.service2 ul
+{
+    font-size: 20px;
+    color:#000;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-right: -10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    background: #FAA41B;
+    border-radius: 10px;
+}
+
+.service3 ul
+{
+    font-size: 20px;
+    color:#000;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-right: -10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    background: #FAA41B;
+    border-radius: 10px;
+}
+
+.service1 ul:hover
+{
+    cursor: pointer;
+}
+
+.service2 ul:hover
+{
+    cursor: pointer;
+}
+
+.service2 ul:hover
+{
+    cursor: pointer;
+}
+
+.service1 img
+{
+    width: 150px;
+    height: 150px;
+    padding-top: 15px;
+    padding-right: 50px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.service2 img
+{
+    width: 150px;
+    height: 150px;
+    padding-top: 15px;
+    padding-right: 50px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.service3 img
+{
+    width: 150px;
+    height: 150px;
+    padding-top: 15px;
+    padding-right: 50px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.filters
+{
+  height: 540px;
+  width: 300px;
+  background-color: #FAA41B;
+  position: absolute;
+  bottom: 0;
+  margin-left: 60px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.filters h1
+{
+  color:black;
+  text-align: center;
+  margin-left: -50px;
+  margin-top: 20px;
+  padding: 50px;
+}
+
+.filters li
+{
+  font-size: 25px;
+  color: black;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  margin-left: -50px;
+}
+
+.filters li:hover
+{
+  cursor: pointer;
+}
+/*------------------------------------for the search results----------------------------------*/
+
+.searchResults
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  right: 0;
+  left: 0;
+}
+
+#searchResults
+{
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+/*------------------------------------footer----------------------------------*/
+
+.footer
+{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  border-top: 1px solid rgb(158, 158, 158);
+  padding: 0;
+  color: rgb(158, 158, 158);
+}
+
+.footer-right, .footer-left
+{
+  position: absolute;
+  top: 5px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-left
+{
+  left: 10px;
+}
+
+.footer-right
+{
+  right: 10px;
+}
+
+.footer-right a
+{
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(158, 158, 158);
+}
+
+.footer-right__links
+{
+  border-right: 1px solid rgb(158, 158, 158);
+}
+
+.footer-right a:hover
+{
+  color: white;
+}
+
+#copyright
+{
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+}
+
